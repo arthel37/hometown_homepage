@@ -64,21 +64,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.5s ease-in-out; /*
-  animation-name: deBump;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;*/
+  transition: transform 0.5s ease-in-out;
 }
 
 .activityList:hover {
-  transform: scale(
-    1.1
-  ); /*
-  animation-name: listBump;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;*/
+  transform: scale(1.1);
 }
 
 .activityPhoto {
@@ -110,22 +100,4 @@ body {
   text-shadow: 0px 0px 2px white;
   width: 200px;
   text-align: center;
-}
-
-@keyframes listBump {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes deBump {
-  0% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
