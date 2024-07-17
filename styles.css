@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Lato";
+  src: url("images/lato/Lato-Light.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+#wrapper {
+  border-radius: 20px;
+  text-shadow: 0px 0px 2px black;
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/tarnow.jpg");
+  background-size: cover;
+  height: 800px;
+  width: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 0;
+  text-shadow: 0px 0px 2px white;
+}
+
+#title {
+  color: #1c140b;
+  background-color: #e9d8bf;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#nutshell {
+  color: #e9d8bf;
+  background-color: #786858;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+#activities {
+  background-color: #5b6d74;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #e9d8bf;
+}
+
+#activityAllLists {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.activityList {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out; /*
+  animation-name: deBump;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;*/
+}
+
+.activityList:hover {
+  transform: scale(
+    1.1
+  ); /*
+  animation-name: listBump;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;*/
+}
+
+.activityPhoto {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#footer {
+  margin: 30px auto 0;
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  background-color: #786858;
+  color: #e9d8bf;
+  border-bottom: 10px solid #1c140b;
+}
+
+#footerPhoto {
+  width: 200px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+#footerText {
+  margin: auto 0;
+  text-shadow: 0px 0px 2px white;
+  width: 200px;
+  text-align: center;
+}
+
+@keyframes listBump {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes deBump {
+  0% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
